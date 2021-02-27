@@ -19,7 +19,7 @@
           <input type="text" name="name"/>
           <label>
             <span>Category</span>
-            <select id="category">
+            <select id="category" onchange="gitselectoption();">
               <option value="select">select..</option>
             <option value="cancer">Alhusain Center for Cancer</option>
             <option value="refugees">Refugees</option>
@@ -45,7 +45,12 @@
     <footer>
 
     </footer>
-
+<script>
+function gitselectoption(){
+  let selectType=document.getElementById('type');
+  selectType.Value; 
+  console.log(selectType.Value);
+}</script>
     <script src="/js/gifts.js"></script>
 </body>
 </html>

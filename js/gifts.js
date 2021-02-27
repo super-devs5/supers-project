@@ -78,6 +78,8 @@ function inKind (){
 //   }
 //   //selectType.removeEventListener('click', action);
 // }
-selectType.addEventListener('select',function (){if (selectType.id=='in-kind'){payment();}   });
-
+// function gitselectoption(){
+//   selectType.Value; 
+//   console.log(selectType.Value);
+// }
 

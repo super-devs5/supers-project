@@ -63,15 +63,21 @@ function inKind (){
   input3.name = 'address';
 }
 
-selectType.addEventListener('click', action);
-function action (event){
-  console.log(selectType.value);
-  if (selectType.value==='financial') {
-    payment();
-  } else {
-    inKind ();
-  }
-  selectType.removeEventListener('click', action);
-}
+// let firstOp = document.getElementById('in-kind');
+// let secandOp = document.getElementById('financial');
+
+// firstOp.addEventListener('click', action);
+// secandOp.addEventListener('click', action);
+// function action (event){
+//   console.log(firstOp.value);
+//   if (firstOp) {
+//     payment();
+//     console.log(firstOp);
+//   } else if (secandOp){
+//     inKind ();
+//   }
+//   //selectType.removeEventListener('click', action);
+// }
+selectType.addEventListener('select',function (){if (selectType.id=='in-kind'){payment();}   });
 
 

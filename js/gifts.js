@@ -73,14 +73,13 @@ function inKind() {
 selectType.addEventListener('change', action);
 
 function action(event) {
-  console.log(selectType.value);
+  // console.log(selectType.value);
   if (selectType.value === 'in-kind') {
     selectfin.innerHTML = '';
     inKind();
 
   } else if (selectType.value === 'financial') {
     selectkind.innerHTML = '';
-
     payment();
   }
 

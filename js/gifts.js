@@ -39,7 +39,10 @@ function payment() {
   input3.type = 'password';
   input3.name = 'password';
 
-}
+//   let input3=document.createElement('input');
+//   lable3.appendChild(input3);
+//   input3.type = 'password';
+//   input3.name = 'password';
 
 function inKind() {
   let lable1 = document.createElement('label');
@@ -98,4 +101,4 @@ function result(event) {
 }
 
 console.log(giftForm);
-
+}

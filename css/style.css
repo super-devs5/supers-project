@@ -1,0 +1,119 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+ul li a { 
+    position: relative; 
+} 
+ul li a::before { 
+    content: ""; 
+    width: 0px; 
+    height: 10px; 
+    background: #1c6db9; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    transition: .5s; 
+} 
+ul li a:hover::before { 
+    width: 50%; 
+    transform: translateX(100%); 
+} 
+
+
+header nav img{
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+header{
+    background-image: linear-gradient( #1687a7, #57aae6);
+    height: 150px;
+}
+header nav ul li{
+    display: inline;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    padding-left: 30px;
+}
+header nav ul{
+    text-align: right;
+    position: relative;
+    right: 150px;
+    bottom: 80px;
+}
+footer img{
+    width: 40px;
+    height: 40px;
+    padding-left: 20px;
+}
+
+.toKnow{
+    width: 700px;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.6;
+    color: rgb(84, 84, 87);
+    position: relative;
+    left: 30%;
+}
+
+.showNo{
+    background-image: url(/img/CharityAccount-Rebecca.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 500px;
+}
+.one, .tow{
+float: left;
+margin: 50px;
+padding: 20px;
+background-color:rgba(194, 194, 209, 0.514);
+position: relative;
+left: 200px;
+color: white;
+line-height: 1.4;
+}
+footer div {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+footer nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 150px;
+    line-height: 1.6;
+}
+footer{
+    height: 330px;
+    background-image: linear-gradient( #1687a7, #57aae6);
+
+}
+footer nav{
+    position: relative;
+    top: 50px;
+}
+nav a:hover{
+    color:#1c6db9;
+}
+.copy{
+    text-align: center;
+    position: relative;
+    top: 30;
+    font-family: 'Roboto', sans-serif;
+}
+
+.partners{
+       font-family: 'Roboto', sans-serif;
+ 
+}

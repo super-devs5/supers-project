@@ -84,14 +84,12 @@ function inKind() {
 selectType.addEventListener('change', action);
 
 function action(event) {
-  
   if (selectType.value === 'in-kind') {
     selectfin.innerHTML = '';
     inKind();
 
   } else if (selectType.value === 'financial') {
     selectkind.innerHTML = '';
-
     payment();
     
   }
@@ -107,8 +105,13 @@ let summ =0;
 function result(event) {
   event.preventDefault();
   paragraph.textContent = `Thank you ${giftForm.name.value} for supporting ${giftForm.category.value} by giving ${input1.value} we will contact you very soon`;
- summ = input1.value;
+  
+  summ=input1.value;
+  getRes();
   saveToLoc();
+
+  console.log(locTotal);
+
   submit.removeEventListener('click', result);
 
 }
@@ -153,23 +156,20 @@ function image(event) {
 function saveToLoc()
 {
 
-    // let locS= JSON.stringify(summ);
-    // localStorage.setItem(summ);
-    console.log(summ);
-    localStorage.setItem("lastname", summ);
+    let locS= JSON.stringify(summ);
+    localStorage.setItem("Sumation", summ);
     
 
 }
-// saveToLoc();
-function fixedRes()
+let locTotal=0;
+function getRes()
 {
-    let prevR= localStorage.getItem('votes');
+    let prevVal= localStorage.getItem('Sumation');
+    locTotal=JSON.parse(prevVal);
     
-    if (prevR)
-    {objArr=JSON.parse(prevR);
-        resultFun(); 
-        chartrender();
-    }
+    locTotal += summ ;
+    
+    
    
 }
 

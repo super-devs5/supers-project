@@ -8,32 +8,43 @@ let category = document.getElementById('category');
 
 let input1 = document.createElement('input');
 
-
+let brEl =document.createElement('br');
+let brE2 =document.createElement('br');
+let brE3 =document.createElement('br');
+  
 
 let selectType = document.getElementById('type');
 
 function payment() {
+  
+
+
   let lable1 = document.createElement('label');
   selectfin.appendChild(lable1);
-  lable1.textContent = 'Amount';
+  
+  lable1.textContent = 'Amount : ';
 
   lable1.appendChild(input1);
   input1.type = 'number';
   input1.name = 'money';
 
+  selectfin.appendChild(brE2);
+
+
 
   let lable2 = document.createElement('label');
   selectfin.appendChild(lable2);
-  lable2.textContent = 'Card Number';
+  lable2.textContent = 'Card Number : ';
 
   let input2 = document.createElement('input');
   lable2.appendChild(input2);
   input2.type = 'number';
   input2.name = 'card';
+  selectfin.appendChild(brEl);
 
   let lable3 = document.createElement('label');
   selectfin.appendChild(lable3);
-  lable3.textContent = 'Password:';
+  lable3.textContent = 'Password : ';
 
   let input3 = document.createElement('input');
   lable3.appendChild(input3);
@@ -46,12 +57,13 @@ function payment() {
 function inKind() {
   let lable1 = document.createElement('label');
   selectkind.appendChild(lable1);
-  lable1.textContent = 'Whats your gift';
+  lable1.textContent = 'Whats your gift :';
 
   lable1.appendChild(input1);
   input1.type = 'text';
   input1.name = 'giftType';
 
+  selectkind.appendChild(brEl);
   let lable5 = document.createElement('label');
   selectkind.appendChild(lable5);
   lable5.textContent = 'Quantity :';
@@ -60,19 +72,19 @@ function inKind() {
   lable5.appendChild(input5);
   input5.type = 'number';
   input5.name = 'Quantity';
-
+  selectkind.appendChild(brE2);
   let lable2 = document.createElement('label');
   selectkind.appendChild(lable2);
-  lable2.textContent = 'Phone Number';
+  lable2.textContent = 'Phone Number :';
 
   let input2 = document.createElement('input');
   lable2.appendChild(input2);
   input2.type = 'number';
   input2.name = 'phone';
-
+  selectkind.appendChild(brE3);
   let lable3 = document.createElement('label');
   selectkind.appendChild(lable3);
-  lable3.textContent = 'Address';
+  lable3.textContent = 'Address :';
 
   let input3 = document.createElement('input');
   lable3.appendChild(input3);
@@ -113,10 +125,11 @@ submit.addEventListener('click', image);
 
 
 let donation= [0,0,0,0];
+
 function image(event) {
   submit.removeEventListener('click', image);
 
-  let img = document.createElement('img');
+  let img = document.getElementById('defimg')
 
   if (category.value === 'Alhusain Center for Cancer') {
     donation[0]=parseInt(donation[0])+parseInt(input1.value);

@@ -1,0 +1,50 @@
+#giftSide{
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 300px;
+    line-height: 40px;
+    border: solid black 1px;
+    padding-left: 100px;
+    padding-right: 90px;
+    float: left;
+}
+input{
+    width: 80%;
+  padding: 7px 12px;
+}
+select{
+    width: 89%;
+    padding: 7px 12px;
+}
+#submit{
+    text-align: center;
+    font-size: 15px;
+    width: 30%;
+    padding: 5px;
+    margin: 15px;
+
+}
+#defimg{
+    height: 400px;
+    width: 400px;
+    left: 100px;
+}
+
+#result1
+{
+    position: relative;
+        left: 200px;
+        top: 30px;
+
+}
+#paragraph{
+    /* display: inline-block; */
+    position: absolute;
+    width: 370px;
+    top: 30px;
+    left: 550px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+
+}

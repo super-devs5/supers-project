@@ -1,0 +1,362 @@
+
+*{
+    box-sizing: content-box;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+header{
+    background-color: #004c84;
+    /* background-image: linear-gradient( #1687a7, #57aae6); */
+    height: 83px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(122, 0, 0, 0.3);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+ul li a { 
+    position: relative; 
+} 
+ul li a::before { 
+    content: ""; 
+    width: 0px; 
+    height: 10px; 
+    background: #1c6db9; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    transition: .5s; 
+} 
+ul li a:hover::before { 
+    width: 50%; 
+    transform: translateX(100%); 
+} 
+
+
+header nav img{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    top: 0%;
+   left: 15px;
+   border: rgb(255, 255, 255);
+   border-style: solid;
+   border-radius: 40%;
+   background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+header nav ul li{
+    display: inline;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px;
+}
+header nav ul{
+    text-align: right;
+    position: relative;
+    right: 30px;
+    bottom: 60px;
+}
+
+.btn{
+    font-family: "Roboto" , sans-serif;
+    font-weight: bold;
+    /* background: #e00570; */
+    width: 110px;
+    height: 40px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(250, 250, 250);
+    /* border-radius: 10px; */
+    /* border-style: solid;
+    border-color: #660031; */
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(150, 0, 82, 0.2);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow , transform;
+    transition-property: box-shadow , transform;
+}
+
+.btn:hover , .btn:focus , .btn:active {
+    box-shadow: 0px 0px 20px rgba(255, 161, 213, 0.4);
+    -webkit-transform: scale(1.1);
+    transform:scale(1.1)
+}
+nav a:hover{
+    color:#ffffff;
+    background-color: #f383b2;
+}
+
+.showNo {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin-top: 0px;
+    background-color: rgb(255, 249, 249);
+    /* background-image: linear-gradient(to right, rgb(97, 0, 40) , rgb(121, 26, 92)); */
+
+    box-shadow: 4px 4px 4px 4px rgba(10, 10, 10, 0.4);
+}
+.Our-initiatives {
+    position :relative;
+    margin-top: 150px;
+    width: 60%;
+    left :280px;
+    text-align: center;
+
+}
+#headofOur-initiatives{
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    /* left: 20px; */
+    text-align: center;
+    color: #a10144;
+    top: 50px;
+}
+#paraofOur-initiatives{
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    top: 60px;
+    text-align: center;
+    color: #021658;
+ 
+}
+.toKnow{
+    position: relative;
+    width: 1156px;
+    height:270px;
+    text-align: left;
+    padding: 30px;
+    line-height: 1.4;
+    color: rgb(57, 57, 58);
+    left: 70px;
+    top: 20px;
+    background-color: #004c84 ;
+    box-shadow: 2px 5px 5px 2px rgba(10, 10, 10, 0.4);
+margin-top: 100px;
+}
+
+.cont1{
+    position: relative;
+    width:500px ;
+    height:270px ;
+    left: 0px;
+    font-family: sans-serif;
+    /* background-color:#004c84 ; */
+    margin-left: 0px;
+    margin-bottom: 0px;
+  
+}
+
+#headofvesion {
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    left: 25px;
+    color: #f383b2;
+}
+
+#vesion{
+    position: relative;
+    font-size: 15px;
+   
+    left: 25px;
+    color: white;
+}
+
+#headofmassage {
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    left: 25px;
+    top: 30px;
+    color: #f383b2; 
+}
+
+#ourmassage{
+    position: relative;
+    font-size: 15px;
+    top: 30px;
+    left: 25px;
+    color: white;
+}
+.cont2{
+    width:578px ;
+    height:578px ;
+    right: 0px;
+    /* float: right; */
+}
+.ourvesion{
+    width: 608px;
+    height: 330px;
+    position: relative;
+    left: 578px;
+    bottom: 226px;
+    padding: 0px;
+}
+
+/* .para {
+    position: relative;
+    font-size: 15px;
+    width: 250px;
+    height: 250;
+   } */
+/* 
+/* .heartimg{
+    background-image: url(/img/CharityAccount-Rebecca.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+} */ 
+.one, .tow{
+float: left;
+margin: 50px;
+margin-top: 150px;
+padding: 19px;
+height: 300px;
+background-color:rgba(0, 0, 87, 1);
+position: relative;
+left: 20px;
+bottom: 0px;
+color: rgb(255, 255, 255);
+line-height: 1.4;
+}
+
+
+
+
+footer div {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+footer img{
+    width: 40px;
+    height: 40px;
+    padding-left: 20px;
+}
+footer nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 150px;
+    line-height: 1.6;
+}
+footer{
+    height: 500px;
+    background-color: #70002f;
+    /* background-image: linear-gradient( #020202, #000000); */
+    margin-top: 50px;
+    margin-bottom: 0;
+
+}
+footer nav{
+    position: relative;
+    top: 50px;
+}
+
+.copy{
+    text-align: center;
+    position: relative;
+    top: 30;
+    font-family: 'Roboto', sans-serif;
+}
+
+.parts{
+       position: relative;
+       font-family: 'Roboto', sans-serif;
+       top: 90px;
+    
+}
+#ourpartners{
+  
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+   
+
+}
+
+.partnersimg{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    top: 20px;
+    background-color: white;
+    border: solid white;
+    border-radius: 10%;
+    padding: 0px;
+    margin: 20px;
+    /* padding: 25px; */
+   
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.slideshowimgs {
+    position: relative;
+    width:100%;
+    height: 600px; ;
+    margin-top: 80px;
+    background : url(/img/sadaqah.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    /* border-style: solid;
+    border-radius: 25px;
+    border-width: 10px; */
+    /* border-color: rgb(83, 0, 42); */
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(122, 0, 0, 0.3);
+    /* margin: 50px auto; */
+    left : 0px;
+    top: 1px;
+    bottom: 0 px;
+    animation: slide 20s infinite linear  ;
+}
+@keyframes slide {
+    25%{
+        background : url(/img/sadaqah.png);
+        visibility: visible;
+        background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+    50%{
+        background : url(/img/cancer.png);
+        visibility: visible;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    75%{
+        background : url(/img/camp.jpg);
+        visibility: visible;
+        background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+    100%{
+        background : url(/img/syrian-girl-school-child-education.jpg);
+        visibility:visible;
+        background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+}
+

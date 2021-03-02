@@ -1,7 +1,6 @@
 'use strict';
 
 let eventForm = document.getElementById('eventForm');
-// let eventSelect = document
 
 let submit = document.getElementById('submit');
 submit.addEventListener('click', thanks);

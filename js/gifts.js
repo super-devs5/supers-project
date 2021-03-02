@@ -8,20 +8,15 @@ let category = document.getElementById('category');
 
 let input1 = document.createElement('input');
 
-let brEl =document.createElement('br');
-let brE2 =document.createElement('br');
-let brE3 =document.createElement('br');
-  
+let brEl = document.createElement('br');
+let brE2 = document.createElement('br');
+let brE3 = document.createElement('br');
 
 let selectType = document.getElementById('type');
 
 function payment() {
-  
-
-
   let lable1 = document.createElement('label');
   selectfin.appendChild(lable1);
-  
   lable1.textContent = 'Amount : ';
 
   lable1.appendChild(input1);
@@ -29,8 +24,6 @@ function payment() {
   input1.name = 'money';
 
   selectfin.appendChild(brE2);
-
-
 
   let lable2 = document.createElement('label');
   selectfin.appendChild(lable2);
@@ -50,9 +43,8 @@ function payment() {
   lable3.appendChild(input3);
   input3.type = 'password';
   input3.name = 'password';
-
-
 }
+
 
 function inKind() {
   let lable1 = document.createElement('label');
@@ -105,8 +97,6 @@ function action(event) {
     payment();
 
   }
-
-
 }
 
 let paragraph = document.getElementById('paragraph');
@@ -115,79 +105,78 @@ submit.addEventListener('click', result);
 
 function result(event) {
   event.preventDefault();
+  console.log(selectType.value);
   paragraph.textContent = `Thank you ${giftForm.name.value} for supporting ${giftForm.category.value} by giving ${input1.value} we will contact you very soon`;
-  submit.removeEventListener('click', result);
+  image();
 }
 
-
 let result1 = document.getElementById('result1');
-submit.addEventListener('click', image);
 
+let donation = [0, 0, 0, 0];
 
-let donation= [0,0,0,0];
-
-function image(event) {
-  submit.removeEventListener('click', image);
-
-  // event.preventDefault();
-
-  let img = document.getElementById('defimg')
+function image() {
+  let img = document.getElementById('defimg');
 
   if (category.value === 'Alhusain Center for Cancer') {
-    donation[0]=parseInt(donation[0])+parseInt(input1.value);
-    if (type.value === 'financial')
-    {saveToLoc();
-    //  chart();
-
+    if (type.value === 'financial') {
+      donation[0] = parseInt(donation[0]) + parseInt(input1.value);
+      saveToLoc();
     }
     img.src = '/img/cancer.jpg';
     result1.appendChild(img);
 
-  } else if (category.value ==='refugees') {
-    donation[1]=parseInt(donation[1])+parseInt(input1.value);
-    if (type.value === 'financial')
-    {saveToLoc();}
-    img.src = 'https://www.madania.tn/wp-content/uploads/2018/02/MainRefugee.jpg';
+  } else if (category.value === 'refugees') {
+    if (type.value === 'financial') {
+      donation[1] = parseInt(donation[1]) + parseInt(input1.value);
+      saveToLoc();
+    }
+    img.src = '/img/refugee.jpg';
     result1.appendChild(img);
 
-  } else if (category.value ==='orphans') {
-    donation[2]=parseInt(donation[2])+parseInt(input1.value);
-    if (type.value === 'financial')
-    {saveToLoc();}
-    img.src = 'https://2.bp.blogspot.com/-Ftzno8ran0M/W_hQJ3BEY8I/AAAAAAAACbg/550P0Y7cHXc0BahTp4PhJOex-1e9OTK0gCLcBGAs/s1600/f98dcce921c21f0cb2031d9624a0a7e4_400x400.jpeg';
+  } else if (category.value === 'orphans') {
+    if (type.value === 'financial') {
+      donation[2] = parseInt(donation[2]) + parseInt(input1.value);
+      saveToLoc();
+    }
+    img.src = '/img/orphan.jpg';
     result1.appendChild(img);
 
   }
-  else if (category.value ==='poor') {
-    donation[3]=parseInt(donation[3])+parseInt(input1.value);
-    if (type.value === 'financial')
-    {saveToLoc();}
+  else if (category.value === 'poor') {
+    if (type.value === 'financial') {
+      donation[3] = parseInt(donation[3]) + parseInt(input1.value);
+      saveToLoc();
+    }
     img.src = 'http://almasalah.com/MediaStorage/GalleryImages/129782.jpg?width=750&&height=375';
     result1.appendChild(img);
   }
-chart();
-
+  chart();
 }
 
+
+<<<<<<< HEAD
+let locTotal = [0, 0, 0, 0];
+function saveToLoc() {
+=======
 
 let locTotal=[0,0,0,0];
 function saveToLoc(){
+>>>>>>> 0e88abfdf67e4572b4af7ecd362a0291b90612d3
 
   if (locTotal) {
     for (let i = 0; i < donation.length; i++) {
-      donation[i]=parseInt(donation[i])+parseInt(locTotal[i]);
+      donation[i] = parseInt(donation[i]) + parseInt(locTotal[i]);
     }
-    
-
   }
-  let locS= JSON.stringify(donation);
+  let locS = JSON.stringify(donation);
   localStorage.setItem('Sumation', locS);
 
 }
-
-function getRes(){
-  let prevVal= localStorage.getItem('Sumation');
-  locTotal=JSON.parse(prevVal);
+function getRes() {
+  if (locTotal) {
+    let prevVal = localStorage.getItem('Sumation');
+    locTotal = JSON.parse(prevVal);
+  }
 }
-chart();
 getRes();
+

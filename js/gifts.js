@@ -116,29 +116,30 @@ submit.addEventListener('click', result);
 function result(event) {
   event.preventDefault();
   paragraph.textContent = `Thank you ${giftForm.name.value} for supporting ${giftForm.category.value} by giving ${input1.value} we will contact you very soon`;
-  submit.removeEventListener('click', result);
+  // submit.removeEventListener('click', result);
+  image();
 }
 
 
 let result1 = document.getElementById('result1');
-submit.addEventListener('click', image);
+// submit.addEventListener('click', image);
 
 
 let donation= [0,0,0,0];
 
-function image(event) {
-  submit.removeEventListener('click', image);
+let count=1;
+
+function image() {
+  // submit.removeEventListener('click', image);
 
   // event.preventDefault();
 
-  let img = document.getElementById('defimg')
+  let img = document.getElementById('defimg');
 
   if (category.value === 'Alhusain Center for Cancer') {
     donation[0]=parseInt(donation[0])+parseInt(input1.value);
-    if (type.value === 'financial')
-    {saveToLoc();
-    //  chart();
-
+    if (type.value === 'financial'){
+      saveToLoc();
     }
     img.src = '/img/cancer.jpg';
     result1.appendChild(img);
@@ -147,14 +148,14 @@ function image(event) {
     donation[1]=parseInt(donation[1])+parseInt(input1.value);
     if (type.value === 'financial')
     {saveToLoc();}
-    img.src = 'https://www.madania.tn/wp-content/uploads/2018/02/MainRefugee.jpg';
+    img.src = '/img/refugee.jpg';
     result1.appendChild(img);
 
   } else if (category.value ==='orphans') {
     donation[2]=parseInt(donation[2])+parseInt(input1.value);
     if (type.value === 'financial')
     {saveToLoc();}
-    img.src = 'https://2.bp.blogspot.com/-Ftzno8ran0M/W_hQJ3BEY8I/AAAAAAAACbg/550P0Y7cHXc0BahTp4PhJOex-1e9OTK0gCLcBGAs/s1600/f98dcce921c21f0cb2031d9624a0a7e4_400x400.jpeg';
+    img.src = '/img/orphan.jpg';
     result1.appendChild(img);
 
   }
@@ -165,7 +166,10 @@ function image(event) {
     img.src = 'http://almasalah.com/MediaStorage/GalleryImages/129782.jpg?width=750&&height=375';
     result1.appendChild(img);
   }
-chart();
+  let noor = document.getElementById('score');
+  // noor.innerHTML="";
+  count=0;
+  chart();
 
 }
 
@@ -177,7 +181,6 @@ function saveToLoc(){
     for (let i = 0; i < donation.length; i++) {
       donation[i]=parseInt(donation[i])+parseInt(locTotal[i]);
     }
-    
 
   }
   let locS= JSON.stringify(donation);
@@ -189,5 +192,8 @@ function getRes(){
   let prevVal= localStorage.getItem('Sumation');
   locTotal=JSON.parse(prevVal);
 }
-chart();
+
+// if (count) {
+//   chart();
+// }
 getRes();

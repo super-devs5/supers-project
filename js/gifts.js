@@ -127,14 +127,19 @@ submit.addEventListener('click', image);
 let donation= [0,0,0,0];
 
 function image(event) {
-submit.removeEventListener('click', image);
+  submit.removeEventListener('click', image);
+
+  // event.preventDefault();
 
   let img = document.getElementById('defimg')
 
   if (category.value === 'Alhusain Center for Cancer') {
     donation[0]=parseInt(donation[0])+parseInt(input1.value);
     if (type.value === 'financial')
-    {saveToLoc();}
+    {saveToLoc();
+    //  chart();
+
+    }
     img.src = '/img/cancer.jpg';
     result1.appendChild(img);
 
@@ -156,26 +161,24 @@ submit.removeEventListener('click', image);
   else if (category.value ==='poor') {
     donation[3]=parseInt(donation[3])+parseInt(input1.value);
     if (type.value === 'financial')
-    {saveToLoc()
-    }
+    {saveToLoc();}
     img.src = 'http://almasalah.com/MediaStorage/GalleryImages/129782.jpg?width=750&&height=375';
     result1.appendChild(img);
   }
-  
-  getRes();
-  // let save1=saveToLoc();
-  // if (save1)
-  
-}
-let locTotal;
+chart();
 
+}
+
+
+let locTotal=[0,0,0,0];
 function saveToLoc(){
-  locTotal=[0,0,0,0];
 
   if (locTotal) {
     for (let i = 0; i < donation.length; i++) {
       donation[i]=parseInt(donation[i])+parseInt(locTotal[i]);
     }
+    
+
   }
   let locS= JSON.stringify(donation);
   localStorage.setItem('Sumation', locS);
@@ -185,11 +188,6 @@ function saveToLoc(){
 function getRes(){
   let prevVal= localStorage.getItem('Sumation');
   locTotal=JSON.parse(prevVal);
-  console.log('t git re',locTotal)
- // not null
-
-    chart();
-  
-  // chart();
 }
-
+chart();
+getRes();

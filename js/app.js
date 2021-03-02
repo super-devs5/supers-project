@@ -6,12 +6,12 @@ let arryOfCatigory = ['Alhusain Center', 'Refugees', 'Orphans', 'Poor'];
 
 
 function chart() {
-  
 
   let chartJs = document.getElementById('score').getContext('2d');
 
   let storedValue = localStorage.getItem('Sumation');
   let chartArr = JSON.parse(storedValue);
+  console.log(chartArr,'chart',locTotal,'loc');
   if (chartArr) {
     var buyerData = new Chart(chartJs, {
       type: 'horizontalBar',

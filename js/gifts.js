@@ -50,9 +50,8 @@ function payment() {
   lable3.appendChild(input3);
   input3.type = 'password';
   input3.name = 'password';
-
-
 }
+
 
 function inKind() {
   let lable1 = document.createElement('label');
@@ -174,6 +173,7 @@ function image() {
 }
 
 
+
 let locTotal=[0,0,0,0];
 function saveToLoc(){
 
@@ -197,3 +197,4 @@ function getRes(){
 //   chart();
 // }
 getRes();
+

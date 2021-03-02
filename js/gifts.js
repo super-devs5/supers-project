@@ -127,41 +127,50 @@ submit.addEventListener('click', image);
 let donation= [0,0,0,0];
 
 function image(event) {
-  submit.removeEventListener('click', image);
+submit.removeEventListener('click', image);
 
   let img = document.getElementById('defimg')
 
   if (category.value === 'Alhusain Center for Cancer') {
     donation[0]=parseInt(donation[0])+parseInt(input1.value);
-    saveToLoc();
-    img.src = 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Al-Hussain_Cancer_Center.jpg';
+    if (type.value === 'financial')
+    {saveToLoc();}
+    img.src = '/img/cancer.jpg';
     result1.appendChild(img);
 
   } else if (category.value ==='refugees') {
     donation[1]=parseInt(donation[1])+parseInt(input1.value);
-    saveToLoc();
+    if (type.value === 'financial')
+    {saveToLoc();}
     img.src = 'https://www.madania.tn/wp-content/uploads/2018/02/MainRefugee.jpg';
     result1.appendChild(img);
 
   } else if (category.value ==='orphans') {
     donation[2]=parseInt(donation[2])+parseInt(input1.value);
-    saveToLoc();
+    if (type.value === 'financial')
+    {saveToLoc();}
     img.src = 'https://2.bp.blogspot.com/-Ftzno8ran0M/W_hQJ3BEY8I/AAAAAAAACbg/550P0Y7cHXc0BahTp4PhJOex-1e9OTK0gCLcBGAs/s1600/f98dcce921c21f0cb2031d9624a0a7e4_400x400.jpeg';
     result1.appendChild(img);
 
   }
   else if (category.value ==='poor') {
     donation[3]=parseInt(donation[3])+parseInt(input1.value);
-    saveToLoc();
+    if (type.value === 'financial')
+    {saveToLoc()
+    }
     img.src = 'http://almasalah.com/MediaStorage/GalleryImages/129782.jpg?width=750&&height=375';
     result1.appendChild(img);
   }
-
+  
+  getRes();
+  // let save1=saveToLoc();
+  // if (save1)
+  
 }
+let locTotal;
 
-
-let locTotal=[0,0,0,0];
 function saveToLoc(){
+  locTotal=[0,0,0,0];
 
   if (locTotal) {
     for (let i = 0; i < donation.length; i++) {
@@ -170,12 +179,17 @@ function saveToLoc(){
   }
   let locS= JSON.stringify(donation);
   localStorage.setItem('Sumation', locS);
+
 }
 
 function getRes(){
   let prevVal= localStorage.getItem('Sumation');
   locTotal=JSON.parse(prevVal);
-}
-getRes();
+  console.log('t git re',locTotal)
+ // not null
 
+    chart();
+  
+  // chart();
+}
 

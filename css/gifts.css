@@ -54,7 +54,7 @@ select{
     position: absolute;
     left: 500px;
     top: 20px;
-    height: 400px;
+    height: 475px;
     width: 550px;
 }
 #result1{
@@ -68,8 +68,11 @@ select{
     top: 30px;
     left: 550px;
     font-size: 25px;
-    line-height: 30px;
+    line-height: 35px;
     z-index: 2;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    font-weight: bold;
 }
 #giftForm{
     position: relative;

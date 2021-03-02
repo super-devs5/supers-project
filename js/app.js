@@ -1,30 +1,45 @@
-'use strict';
+// 'use strict';
 
-let locTotal1=[0,0,0,0];
-function getResult(){
-  let prevVal= localStorage.getItem('Sumation');
-  locTotal1=JSON.parse(prevVal);
-}
-getResult();
 
-let categoryArr=['Alhusain Center for Cancer','refugees','orphans','poor'];
-let intial=0;
-let listDonation=document.getElementById('listDonation');
 
-function rendertotal() {
-  let liEl;
-  if (locTotal1) {
-    for (let i = 0; i < locTotal1.length; i++) {
-      liEl=document.createElement('li');
-      listDonation.appendChild(liEl);
-      liEl.textContent=`The total donation for ${categoryArr[i]} : ${locTotal1[i]} $`;
+let arryOfCatigory = ['Alhusain Center', 'Refugees', 'Orphans', 'Poor'];
+
+
+function chart() {
+
+    var chartJs = document.getElementById('score').getContext('2d');
+
+    let storedValue = localStorage.getItem('Sumation');
+    let chartArr = JSON.parse(storedValue);
+
+    if (chartArr) {
+        var buyerData = new Chart(chartJs, {
+            type: 'horizontalBar',
+
+
+            data: {
+                labels: arryOfCatigory,
+                datasets: [
+                    {
+                        label: 'Total Amount Of Donations',
+                        borderColor: 'ACC26D',
+                        data: chartArr,
+                        backgroundColor: ['#FCD1D1', '#AEE1E1', '#FFEE93', 'rgba(12,194,52,0.4)'],
+                        borderColor: '#E7E6E1',
+                        borderWidth: 2,
+                        hoverBorderWidth: 5,
+                        hoverborderColor: '#AAAAAA'
+
+                    }
+
+
+
+
+                ]
+            },
+
+            options: { scales: { yAxes: [{ ticks: { beginAtZero: true } }] } }
+        })
     }
-  }else{
-    for (let i = 0; i < categoryArr.length; i++) {
-      liEl=document.createElement('li');
-      listDonation.appendChild(liEl);
-      liEl.textContent=`The total donation for ${categoryArr[i]} : ${intial} $`;
-    }
-  }
 }
-rendertotal();
+

@@ -1,413 +1,271 @@
-* {box-sizing:content-box;} 
-
-
+* {
+  box-sizing: content-box;
+}
 
 body {
   overflow-x: hidden;
   position: relative;
- 
 }
 
-
-@keyframes bodyanimation {
-  0%   {background-color: #f1dbe3;}
-  100% {background-color: #faf3e0;}
-  50%  {background-color: #ffdcdc;}
-  25%  {background-color: #d3e0ea;}
-}
-
-
-/* #giftSide{
-    margin-top: 30px;
-    margin-left: 50px;
-    width: 300px;
-    line-height: 40px;
-    border: solid black 1px;
-    padding-left: 100px;
-    padding-right: 90px;
-    float: left;
-}
-input{
-    width: 80%;
-  padding: 7px 12px;
-}
-select{
-    width: 89%;
-    padding: 7px 12px;
-}
-#submit{
-    text-align: center;
-    font-size: 15px;
-    width: 30%;
-    padding: 5px;
-    margin: 15px;
-
-}
-#defimg{
-    height: 400px;
-    width: 400px;
-    left: 100px;
-}
-
-#result1
-{
-    position: relative;
-        left: 200px;
-        top: 30px;
-
-}
-#paragraph{
-    position: absolute;
-    width: 370px;
-    top: 30px;
-    left: 550px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-    line-height: 30px;
-} */
-.tableandimg{
+.tableandimg {
   position: relative;
   width: 95%;
   height: 900px;
   top: 50px;
   left: 30px;
-  /* background-image: linear-gradient(to right #36aaa1 , #1f6d9e); */
+
   animation: bodyanimation infinite linear;
   animation-duration: 15s;
   background-color: rgba(245, 189, 167, 0.3);
-  
-  
-  /* background-color: rgba(252, 199, 234, 0.2); */
+
   border-radius: 20px;
   box-shadow: 5px 5px 5px 5px rgba(79, 81, 82, 0.2);
-  
-
-
 }
-#defimg{
-    position: relative;
-    left: 650px;
-    border-radius: 5%;
-    height: 465px;
-    width: 600px;
-    top: 35px;
+#defimg {
+  position: relative;
+  left: 650px;
+  border-radius: 5%;
+  height: 465px;
+  width: 600px;
+  top: 35px;
 }
-#result1{
-    position: absolute;
-        /* left: 200px; */
-        top: 0px;
+#result1 {
+  position: absolute;
+
+  top: 0px;
 }
 
-#paragraph{
-    position: absolute;
-    width: 390px;
-    top: 270px;
-    left: 670px;
-    font-size: 25px;
-    line-height: 35px;
-    z-index: 2;
-    font-family: 'Roboto', sans-serif;
-    background-color: rgba(252, 208, 208, 0.4);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: justify;
-    color:rgb(255, 255, 255);
-    font-weight: bold;
+#paragraph {
+  position: absolute;
+  width: 390px;
+  top: 295px;
+  left: 700px;
+  font-size: 25px;
+  line-height: 35px;
+  z-index: 2;
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: justify;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
 }
 
-#giftForm{
-    position: relative;
-    
-    width: 500px;
-    /* height:478px ; */
-    align-items: center;
-    margin: 50px;
-    border-radius: 5%;
-    padding-left: 50px;
-    top: 35px;
-    right:0px ;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;;
-    /* background-size: 100% 100%; */
-    background-color: #36aca0;
-    color:rgb(255, 255, 255);
-    z-index: 3;
-  }
+#giftForm {
+  position: relative;
 
-  form label {
-    position: relative;
-    
-    font-size: 20px; 
-    /* float: left;  */
-    right:45px; 
+  width: 500px;
 
-   } 
+  align-items: center;
+  margin: 50px;
+  border-radius: 5%;
+  padding-left: 50px;
+  top: 35px;
+  right: 0px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
 
-   /* form input,select {
-    position: relative;
-    width: 400px;
-    bottom:0px;
-    /* right: 60px; */
-    /* border-radius: 20px;
-    background-color: #b0deff; */ 
-  /* } */
-  #giftSide{
-    margin-left: 7%;
-    padding: 20px;
-    width: 60%;
-    border: none;
-    line-height: 40px;
-    font-size: 20px;
-    z-index: 1;
-  }
+  background-color: #36aca0;
+  color: rgb(255, 255, 255);
+  z-index: 3;
+}
 
-  input , select{
-    margin-bottom: 20px;
-    overflow: hidden;
-    font-size: 20px;
-    padding: 6px;
-    /* margin-left: 0px; */
-    
-    width: 400px;
-    left:10 px;
-    border-radius: 20px;
-    background-color: #c7efff;
-    border: none;
-    border-bottom: 3px solid #97cedf;
-   /* outline: none; */
-  /* }
-  #selectkind,#selectfin{
-    
-    /* background-color: rgb(232, 238, 240);  */
-    /* border-radius: 5px; */
-    border: none;
-    /* border-bottom: 3px dashed silver; */
-    z-index: 10;
-  }
+form label {
+  position: relative;
 
-  .firstinput {
-    position: relative;
-    right: 42px;
-    width: 400px ;
+  font-size: 20px;
+  right: 45px;
+}
+
+#giftSide {
+  margin-left: 7%;
+  padding: 20px;
+  width: 60%;
+  border: none;
+  line-height: 40px;
+  font-size: 20px;
+  z-index: 1;
+}
+
+input,
+select {
+  margin-bottom: 20px;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 6px;
+
+  width: 400px;
+  left: 10 px;
+  border-radius: 20px;
+  background-color: #c7efff;
+  border: none;
+  border-bottom: 3px solid #97cedf;
+
+  border: none;
+
+  z-index: 10;
+}
+
+.firstinput {
+  position: relative;
+  right: 42px;
+  width: 400px;
   padding-left: 24px;
-  }
+}
 
-  input:focus {
-    background-color: rgb(192, 233, 245);
-    border: 3px solid rgb(91, 205, 240);
-  }
-  input:first-child{
-    /* margin-left: 104px; */
-  /* margin-left: 0px; */
-    z-index: 1;
-  }
-  input[type="number"]{
-    padding-left: 30px;
-    z-index: 1;
-  }
-  select{
-    padding-left: 30px;
-    z-index: 1;
-  }
- 
-  #submit{
-      width: 50%;
-    border-radius: 20px;
-    left:50px;
-    top :10px;
-    background-color:rgb(2, 101, 114);
-    font-family:'Roboto', sans-serif;
-    font-weight: bold;
-    letter-spacing: 1px;
+input:focus {
+  background-color: rgb(192, 233, 245);
+  border: 3px solid rgb(91, 205, 240);
+}
+input:first-child {
+  z-index: 1;
+}
+input[type="number"] {
+  padding-left: 30px;
+  z-index: 1;
+}
+select {
+  padding-left: 30px;
+  z-index: 1;
+}
+
+#submit {
+  width: 50%;
+  border-radius: 20px;
+  left: 50px;
+  top: 10px;
+  background-color: rgb(2, 101, 114);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: white;
   border-color: rgb(15, 123, 138);
   /* background-color: #ccc; */
   position: relative;
-  
-  }
-
-  #submit:hover ,  #submit:focus ,  #submit:active {
-    box-shadow: 0px 0px 20px rgba(255, 161, 213, 0.4);
-    -webkit-transform: scale(1.1);
-    transform:scale(1.1)
 }
 
-#submit:hover{
-  color:#ffffff;
+#submit:hover,
+#submit:focus,
+#submit:active {
+  box-shadow: 0px 0px 20px rgba(255, 161, 213, 0.4);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#submit:hover {
+  color: #ffffff;
   background-color: #f5bda7;
 }
-  /* #submit:hover{
-  border-color:rgb(182, 178, 243);
-  background-color: rgb(210, 210, 255);
-  color:rgb(7, 52, 104);
-  } */
-   
-  label{
-    color: rgb(7, 35, 66);
-    font-style: italic;
-  }
-  legend{
-    position: relative;
-    font-family:  'Playball', cursive;
-    font-size: 50px;
-    left: 65px;
-   
-    /* border-bottom: rgb(255, 255, 255)1px solid; */
-    color:rgb(255, 255, 255);
-    margin-bottom: 30px;
-  }
 
-  .score {
-    position: relative;
-     top: 50px;
-     /* padding-bottom: 200px;
-     padding-top: 100px; */
-     width:900px;
-    height: 400px;
-    left: 180px;
-    margin-bottom: 150px;
-    margin-top: 100px;
-    
-    
-   /* background-color:rgb(51, 170, 185); 
-    color:#f53384 ;
-    border-radius: 30px; */
-    
-    
-  }
-
-  footer div {
-    text-align: center;
-    position: relative;
-    bottom: 20px;
-    font-family: 'Roboto', sans-serif;
-
+  label {
+  color: rgb(7, 35, 66);
+  font-style: italic;
 }
-
-
-footer img{
-    width: 40px;
-    height: 40px;
-    padding-left: 20px;
-}
-
-
-footer nav ul li a{
-    color:white;
-    text-decoration: none;
-    font-size: 30px;
-    padding-left: 150px;
-    line-height: 1.6;
-}
-
-
-footer{
-    height: 150px;
-    /* background-image: linear-gradient(to right, #f00466 , #580025); */
-    /* background-image: linear-gradient( #020202, #000000); */
-    background-color:  #1d262d;
-    margin-top: 150px;
-    margin-bottom: 0;
-}
-
-
-footer nav{
-    position: relative;
-    top: 130px;
-}
-
-
-/* .finalfooter{
-    position: relative;
-    width: 100%;
-    height: 60px;
-    background-color: #1b1b1b;
-    top: 110px;
-} */
-
-.copyright{
-    text-align: center; 
-     position: relative;
-     bottom: 140px;
-    color: rgb(112, 112, 112);
-    font-size: 13px;
-    margin: 5px;
-    font-family: 'Roboto', sans-serif;
-
-} 
-
-.parts{
-       position: relative;
-       font-family: 'Roboto', sans-serif;
-       top: 45px;
-    
-}
-#ourpartners{
+legend {
   position: relative;
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    font-weight:600;
-    letter-spacing: 0px;
-    left: 345px;
-    margin-bottom: 5px;
-   
+  font-family: "Playball", cursive;
+  font-size: 50px;
+  left: 65px;
 
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
 }
 
-.partnersimg{
-    position: relative;
-    width:40px;
-    height: 40px;
-    top: 5px;
-    left: 440px;
-    background-color: white;
-    border: solid white;
-    border-radius: 50%;
-    padding: 0px;
-    margin: 5px;
-    /* padding: 25px; */
+.score {
+  position: relative;
+  top: 50px;
+
+  width: 900px;
+  height: 400px;
+  left: 180px;
+  margin-bottom: 150px;
+  margin-top: 100px;
 }
 
- .flowing {
-    position: relative;
-    top: 50px;
-    left: 10px;
-} 
+footer div {
+  text-align: center;
+  position: relative;
+  bottom: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+  padding-left: 20px;
+}
+
+footer nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  padding-left: 150px;
+  line-height: 1.6;
+}
+
+footer {
+  height: 150px;
+
+  background-color: #1d262d;
+  margin-top: 150px;
+  margin-bottom: 0;
+}
+
+footer nav {
+  position: relative;
+  top: 130px;
+}
+
+.copyright {
+  text-align: center;
+  position: relative;
+  bottom: 140px;
+  color: rgb(112, 112, 112);
+  font-size: 13px;
+  margin: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.parts {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  top: 45px;
+}
+#ourpartners {
+  position: relative;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  letter-spacing: 0px;
+  left: 345px;
+  margin-bottom: 5px;
+}
+
+.partnersimg {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  top: 5px;
+  left: 440px;
+  background-color: white;
+  border: solid white;
+  border-radius: 50%;
+  padding: 0px;
+  margin: 5px;
+}
+
+.flowing {
+  position: relative;
+  top: 50px;
+  left: 10px;
+}
 
 .headoffolowing {
   position: relative;
-  left:10px;
+  left: 10px;
   font-size: 17px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   bottom: 15px;
   color: white;
-  
 }
-/* .mahmoud {
-
-  position:relative;
-  left:10px;
-  top:40px;
-  color: white;
-  font-family:'Roboto', sans-serif;
-
-}
-.mahmoud .head1 {
-position: relative;
-left: 2px;
-font-weight: bold;
-}
-
-
-.mahmoud ul li {
-   position: relative;
-   margin: 5px;
-   font-size: 15px;
-   color: rgb(192, 205, 223);
-} */
-
-
-
- 
-
-

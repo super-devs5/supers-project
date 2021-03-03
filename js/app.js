@@ -21,7 +21,7 @@ function chart() {
             label: 'Total Amount Of Donations',
             borderColor: 'ACC26D',
             data: chartArr,
-            backgroundColor: ['#FCD1D1', '#AEE1E1', '#FFEE93', 'rgba(12,194,52,0.4)'],
+            backgroundColor: ['#004c84', '#e00570','#700338','rgba(12,194,52,0.4)'],
             borderColor: '#E7E6E1',
             borderWidth: 2,
             hoverBorderWidth: 5,

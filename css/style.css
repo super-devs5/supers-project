@@ -2,13 +2,18 @@
 *{
     box-sizing: content-box;
 }
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #dde3f6;
+}
 *{
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
 }
 
 header{
-    background-color: #060149;
+    background-color: #36aca0;
     /* background-image: linear-gradient( #1687a7, #57aae6); */
     height: 65px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(122, 0, 0, 0.3);
@@ -20,11 +25,11 @@ header{
 
 .charityname{
     position: relative;
-    left: 95px;
+    left: 85px;
     bottom: 53px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Playball', cursive;
-    font-size: 35px;
+    font-size: 27px;
 }
 
 ul li a { 
@@ -55,7 +60,8 @@ header nav img{
    left: 15px;
    border: rgb(255, 255, 255);
    border-style: solid;
-   border-radius: 40%;
+  
+   border-radius: 50%;
    background-color: rgba(255, 255, 255, 0.2);
 
 }
@@ -73,7 +79,7 @@ header nav ul{
     text-align: right;
     position: relative;
     right: 30px;
-    bottom: 80px;
+    bottom: 70px;
 }
 
 .btn{
@@ -103,8 +109,9 @@ header nav ul{
     transform:scale(1.1)
 }
 nav a:hover{
-    color:#ffffff;
-    background-color: #f10065;
+    color:#36aca0;
+    background-color: #f5bda7;
+    
 }
 
 .showNo {
@@ -153,9 +160,9 @@ nav a:hover{
     color: rgb(57, 57, 58);
     /* left: 70px; */
     top: 20px;
-    background-color: #004c84 ;
+    background-color: #2fb6a8 ;
     box-shadow: 2px 5px 5px 2px rgba(10, 10, 10, 0.4);
-margin-top: 100px;
+    margin-top: 100px;
 }
 
 .cont1{
@@ -175,7 +182,7 @@ margin-top: 100px;
     font-size: 35px;
     font-weight: bold;
     left: 25px;
-    color: #f383b2;
+    color: #3e4546;
 }
 
 #vesion{
@@ -192,7 +199,7 @@ margin-top: 100px;
     font-weight: bold;
     left: 30px;
     top: 30px;
-    color: #f383b2; 
+    color: #3e4546; 
 }
 
 #ourmassage{
@@ -208,12 +215,13 @@ margin-top: 100px;
     right: 0px;
     /* float: right; */
 }
+
 .ourvesion{
     width: 680px;
     height: 410px;
     position: relative;
-    left: 638px;
-    bottom: 323px;
+    left: 640px;
+    bottom: 324px;
     padding: 0px;
 }
 
@@ -236,19 +244,45 @@ margin-top: 100px;
 .one, .tow{
 float: left;
 margin: 50px;
+
 margin-top: 150px;
 padding: 19px;
 height: 300px;
-background-color:rgba(0, 0, 87, 1);
+background-color:#36aca0;
 position: relative;
-left: 20px;
+left: 40px;
 bottom: 0px;
-color: rgb(255, 255, 255);
-line-height: 1.4;
+color: rgb(248, 248, 248);
+line-height: 1;
+font-size: 17px;
+text-align: center;
+font-family: sans-serif;
+border-radius: 10px;
 }
 
+.buttonone{
+    position: relative;
+    width: 75%;
+    height: 50px;
+    /* right: 5px; */
+   top: 20px;
+   color: rgb(250, 250, 250);
+   border-radius: 20px;
+   font-size: 21px;
+   letter-spacing:2px;
+   background-color:#7b7e7e ;
 
-
+}
+.buttonone:hover , .buttonone:focus , .buttonone:active {
+    box-shadow: 0px 0px 20px rgba(255, 161, 213, 0.4);
+    -webkit-transform: scale(1);
+    /* text-transform: uppercase; */
+    transform:scale(1)
+}
+.buttonone:hover{
+    color:#ffffff;
+    background-color: #f3bfaa;
+}
 
 footer div {
     text-align: center;
@@ -270,68 +304,79 @@ footer nav ul li a{
     line-height: 1.6;
 }
 footer{
-    height: 600px;
-    background-color: #70002f;
+    height: 300px;
+    /* background-image: linear-gradient(to right, #f00466 , #580025); */
     /* background-image: linear-gradient( #020202, #000000); */
-    margin-top: 50px;
+    background-color:  #1d262d;
+    margin-top: 150px;
     margin-bottom: 0;
-
 }
 
 footer nav{
     position: relative;
-    top: 50px;
+    top: 130px;
 }
-.finalfooter{
+/* .finalfooter{
     position: relative;
     width: 100%;
     height: 60px;
-    background-color: rgb(3, 1, 59);
-    top: 250px;
-}
-.copy{
-    /* text-align: center; */
-    position: relative;
-    right: 90px;
-    top: 25px;
-    color: white;
+    background-color: #1b1b1b;
+    top: 110px;
+} */
+
+.copyright{
+    text-align: center; 
+     position: relative;
+     bottom: 140px;
+    color: rgb(112, 112, 112);
+    font-size: 13px;
+    margin: 5px;
     font-family: 'Roboto', sans-serif;
-}
+
+} 
 
 .parts{
        position: relative;
        font-family: 'Roboto', sans-serif;
-       top: 90px;
+       top: 45px;
     
 }
 #ourpartners{
-  
-    font-size: 27px;
+  position: relative;
+    font-size: 18px;
     color: rgb(255, 255, 255);
-    font-weight: bold;
+    font-weight:600;
+    letter-spacing: 0px;
+    left: 345px;
+    margin-bottom: 5px;
    
 
 }
 
 .partnersimg{
     position: relative;
-    width: 150px;
-    height: 150px;
-    top: 20px;
+    width:40px;
+    height: 40px;
+    top: 5px;
+    left: 440px;
     background-color: white;
     border: solid white;
-    border-radius: 10%;
+    border-radius: 50%;
     padding: 0px;
-    margin: 15px;
+    margin: 5px;
     /* padding: 25px; */
-   
-
 }
 
-.share-button {
+.flowing {
+    position: relative;
+    top: 70px;
+    left: 400px;
+}
+
+ /* .share-button {
     width: 260px;
     height: 80px;
-    background: #ffffff;
+    background: #fdfdfd;
     border-radius: 40px;
     display: flex;
     align-items: center;
@@ -343,25 +388,25 @@ footer nav{
     position: relative;
     cursor: pointer;
     transition: .3s linear;
-  }
-  .share-button:hover{
+  }  */
+  /* .share-button:hover{
     transform: scale(1.1);
-  }
-  .share-button span{
+  } */
+  /* .share-button span{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #0f024d;
+    width: 105%;
+    height: 105%;
+    background: #024474;
     color: #f1f1f1;
     text-align: center;
     font-size: 20px;
     line-height: 80px;
     z-index: 999;
     transition: .6s linear;
-    border-radius: 40px;
-   
-  }
-  .share-button:hover span{
+    border-radius: 40px; */
+
+
+  /* .share-button:hover span{
     transform: translateX(-100%);
     transition-delay: .3s;
   }
@@ -370,6 +415,7 @@ footer nav{
     font-size: 26px;
     margin-right: 20px;
     color: #2d3436;
+    letter-spacing: 4px;
     text-align: center;
     transform: translateX(-100%);
     opacity: 0;
@@ -390,30 +436,36 @@ footer nav{
   }
   .share-button a:nth-of-type(4){
     transition-delay: .4s;
-  }
+  } */ */
 
+
+
+ 
 
 .callusbar {
     position: relative;
     float: left;
+    font-family: 'Roboto', sans-serif;
+    
     
 }
 
 .headofcallus{
     position: relative;
-    left: 25px;
-    top: 55px;
+    left: 135px;
+    bottom:225px ;
     color: rgb(255, 255, 255);
-    font-size: 20px;
-  
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 footer nav ul li{
     list-style-type: none;
     font-size: 17px;
     color: white;
     /* display: inline; */
-    margin:10px;
-
+    /* margin:15px; */
+    font-family: 'Roboto', sans-serif;
 }
 .footernav{
     color: rgb(165, 163, 163);
@@ -424,17 +476,78 @@ footer nav ul li{
 footer nav ul{
     text-align: left;
     position: relative;
-    left: 20px;
-    top:60px;
+    left: 160px;
+    bottom:210px;
+   
+
+}
+.callusbarinfo{
+
+    position: relative;
+    margin: 15px;
+    font-family:'Roboto', sans-serif;
+
+}
+
+footer nav ul li img{
+    text-align: left;
+    position: relative;
+    margin: 10px;
+    right: 145px;
+    bottom:50px;
+    width: 20px;
+    height: 20px;
+
+}
+.icon1{
+    position: relative;
+    bottom:80px;
+    width: 25px;
+    height: 25px;
+}
+
+.icon2{
+    position: relative;
+    bottom:90px;
+    width: 22px;
+    height: 22px;
+}
+
+.icon3{
+    position: relative;
+    bottom:205px;
+    right: 142px;
+    width: 22px;
+    height: 22px;
+}
+
+.informationbar {
+    position: relative;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    left: 100px;
+}
+.headofinformationbar{
+    position: relative;
+    font-size: 15px;
+    font-weight: bold;
+    bottom:354px;
+    left:374px;
+    color: white;
+}
+
+.footerinfo {
     
+    position: relative;
+    text-align: left;
+    left:210px;
+    bottom:140px;
+    font-size:15px;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px;
 }
 
-
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #dde3f6;
-}
 .slideshowimgs {
     position: relative;
     width:100%;
@@ -443,7 +556,7 @@ body{
     background : url(/img/sadaqah.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    display: flex;
+    /* display: flex; */
     /* border-style: solid;
     border-radius: 25px;
     border-width: 10px; */
@@ -453,23 +566,25 @@ body{
     left : 0px;
     top: 1px;
     bottom: 0 px;
-    animation: slide 20s infinite linear  ;
+    animation: slide 25s infinite linear;
 }
 @keyframes slide {
-    25%{
+    15%{
         background : url(/img/sadaqah.png);
         visibility: visible;
+       
         background-repeat: no-repeat;
     background-size: 100% 100%;
+
     }
-    50%{
+    40%{
         background : url(/img/cancer.png);
         visibility: visible;
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
-    75%{
-        background : url(/img/camp.jpg);
+    70%{
+        background : url(/img/refugees.png);
         visibility: visible;
         background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -478,7 +593,7 @@ body{
         background : url(/img/syrian-girl-school-child-education.jpg);
         visibility:visible;
         background-repeat: no-repeat;
-    background-size: 100% 100%;
+        background-size: 100% 100%;
     }
 }
 

@@ -154,14 +154,8 @@ function image() {
 }
 
 
-<<<<<<< HEAD
 let locTotal = [0, 0, 0, 0];
 function saveToLoc() {
-=======
-
-let locTotal=[0,0,0,0];
-function saveToLoc(){
->>>>>>> 0e88abfdf67e4572b4af7ecd362a0291b90612d3
 
   if (locTotal) {
     for (let i = 0; i < donation.length; i++) {

@@ -11,12 +11,9 @@ function chart() {
 
   let storedValue = localStorage.getItem('Sumation');
   let chartArr = JSON.parse(storedValue);
-  console.log(chartArr,'chart',locTotal,'loc');
   if (chartArr) {
     var buyerData = new Chart(chartJs, {
       type: 'horizontalBar',
-
-
       data: {
         labels: arryOfCatigory,
         datasets: [

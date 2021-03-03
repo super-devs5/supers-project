@@ -6,12 +6,20 @@ body{
     margin: 0;
     padding: 0;
     background-color: #dde3f6;
+    overflow-x: hidden;
+    position: relative;
+    /* min-height: 100vh; */
+
 }
 *{
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
 }
 
+ main {
+    overflow: hidden;
+  
+ }
 header{
     background-color: #36aca0;
     /* background-image: linear-gradient( #1687a7, #57aae6); */
@@ -20,8 +28,19 @@ header{
     position: fixed;
     top: 0px;
     width: 100%;
-    z-index: 1;
+    z-index:500;
+    animation: example infinite linear;
+    animation-duration: 15s;
 }
+
+@keyframes example {
+    0%   {background-color: #36aca0;}
+    100% {background-color: #1e8694;}
+    50%  {background-color: #206e9f;}
+    25%  {background-color: #004c84;}
+  }
+
+
 
 .charityname{
     position: relative;
@@ -285,8 +304,8 @@ border-radius: 10px;
 }
 
 footer div {
-    text-align: center;
-    position: relative;
+    /* text-align: center; */
+    /* position: relative; */
     bottom: 20px;
     font-family: 'Roboto', sans-serif;
 
@@ -304,12 +323,22 @@ footer nav ul li a{
     line-height: 1.6;
 }
 footer{
-    height: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
     /* background-image: linear-gradient(to right, #f00466 , #580025); */
     /* background-image: linear-gradient( #020202, #000000); */
     background-color:  #1d262d;
-    margin-top: 150px;
+    /* margin-top: 150px; */
     margin-bottom: 0;
+
+}
+body::after{
+    content: '';
+    display: block;
+    height: 200px;
 }
 
 footer nav{
@@ -368,9 +397,20 @@ footer nav{
 }
 
 .flowing {
+    position: absolute;
+    bottom: 80px;
+        left: 530px;
+        font-size: 17px;
+}
+
+.headoffolowing {
     position: relative;
-    top: 70px;
-    left: 400px;
+    left: 75px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    bottom: 15px;
+    color: white;
+    
 }
 
  /* .share-button {
@@ -436,18 +476,36 @@ footer nav{
   }
   .share-button a:nth-of-type(4){
     transition-delay: .4s;
-  } */ */
+  } */ 
+
+.mahmoud {
+
+    position:relative;
+    left:200px;
+    top:40px;
+    color: white;
+    font-family:'Roboto', sans-serif;
+
+}
+.mahmoud .head1 {
+position: relative;
+left: 2px;
+font-weight: bold;
+}
 
 
+ .mahmoud ul li {
+     position: relative;
+     margin: 5px;
+     font-size: 15px;
+     color: rgb(192, 205, 223);
+ }
 
  
-
 .callusbar {
     position: relative;
     float: left;
-    font-family: 'Roboto', sans-serif;
-    
-    
+    font-family: 'Roboto', sans-serif; 
 }
 
 .headofcallus{

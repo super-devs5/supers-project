@@ -13,7 +13,7 @@ body{
 }
 
 header{
-    background-color: #004c84;
+    background-color: #36aca0;
     /* background-image: linear-gradient( #1687a7, #57aae6); */
     height: 65px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(122, 0, 0, 0.3);
@@ -109,8 +109,9 @@ header nav ul{
     transform:scale(1.1)
 }
 nav a:hover{
-    color:#ffffff;
-    background-color: #f53384;
+    color:#36aca0;
+    background-color: #f5bda7;
+    
 }
 
 .showNo {
@@ -159,7 +160,7 @@ nav a:hover{
     color: rgb(57, 57, 58);
     /* left: 70px; */
     top: 20px;
-    background-color: #78c4d4 ;
+    background-color: #2fb6a8 ;
     box-shadow: 2px 5px 5px 2px rgba(10, 10, 10, 0.4);
     margin-top: 100px;
 }
@@ -181,7 +182,7 @@ nav a:hover{
     font-size: 35px;
     font-weight: bold;
     left: 25px;
-    color: #016c81;
+    color: #3e4546;
 }
 
 #vesion{
@@ -189,7 +190,7 @@ nav a:hover{
     font-size: 20px;
    
     left: 25px;
-    color: #2d5f69;
+    color: white;
 }
 
 #headofmassage {
@@ -198,7 +199,7 @@ nav a:hover{
     font-weight: bold;
     left: 30px;
     top: 30px;
-    color: #016c81; 
+    color: #3e4546; 
 }
 
 #ourmassage{
@@ -206,7 +207,7 @@ nav a:hover{
     font-size: 20px;
     top: 30px;
     left: 25px;
-    color: #2d5f69;
+    color: white;
 }
 .cont2{
     width:578px ;
@@ -247,7 +248,7 @@ margin: 50px;
 margin-top: 150px;
 padding: 19px;
 height: 300px;
-background-color:#1e6a9e;
+background-color:#36aca0;
 position: relative;
 left: 40px;
 bottom: 0px;
@@ -269,7 +270,7 @@ border-radius: 10px;
    border-radius: 20px;
    font-size: 21px;
    letter-spacing:2px;
-   background-color:#002857 ;
+   background-color:#7b7e7e ;
 
 }
 .buttonone:hover , .buttonone:focus , .buttonone:active {
@@ -280,7 +281,7 @@ border-radius: 10px;
 }
 .buttonone:hover{
     color:#ffffff;
-    background-color: #ff599e;
+    background-color: #f3bfaa;
 }
 
 footer div {
@@ -303,67 +304,76 @@ footer nav ul li a{
     line-height: 1.6;
 }
 footer{
-    height: 500px;
+    height: 300px;
     /* background-image: linear-gradient(to right, #f00466 , #580025); */
     /* background-image: linear-gradient( #020202, #000000); */
-background-color:  #6e012e;
+    background-color:  #1d262d;
     margin-top: 150px;
     margin-bottom: 0;
-
 }
 
 footer nav{
     position: relative;
-    top: 50px;
+    top: 130px;
 }
-.finalfooter{
+/* .finalfooter{
     position: relative;
     width: 100%;
     height: 60px;
-    background-color: #024775;
-    top: 220px;
-}
-.copy{
-    /* text-align: center; */
-    position: relative;
-    right: 90px;
-    top: 25px;
-    color: white;
+    background-color: #1b1b1b;
+    top: 110px;
+} */
+
+.copyright{
+    text-align: center; 
+     position: relative;
+     bottom: 140px;
+    color: rgb(112, 112, 112);
+    font-size: 13px;
+    margin: 5px;
     font-family: 'Roboto', sans-serif;
-}
+
+} 
 
 .parts{
        position: relative;
        font-family: 'Roboto', sans-serif;
-       top: 90px;
+       top: 45px;
     
 }
 #ourpartners{
-  
-    font-size: 27px;
+  position: relative;
+    font-size: 18px;
     color: rgb(255, 255, 255);
-    font-weight: bold;
-    letter-spacing: 2px;
+    font-weight:600;
+    letter-spacing: 0px;
+    left: 345px;
+    margin-bottom: 5px;
    
 
 }
 
 .partnersimg{
     position: relative;
-    width: 125px;
-    height: 125px;
-    top: 20px;
+    width:40px;
+    height: 40px;
+    top: 5px;
+    left: 440px;
     background-color: white;
     border: solid white;
     border-radius: 50%;
     padding: 0px;
-    margin: 20px;
+    margin: 5px;
     /* padding: 25px; */
-   
-
 }
 
-.share-button {
+.flowing {
+    position: relative;
+    top: 70px;
+    left: 400px;
+}
+
+ /* .share-button {
     width: 260px;
     height: 80px;
     background: #fdfdfd;
@@ -378,11 +388,11 @@ footer nav{
     position: relative;
     cursor: pointer;
     transition: .3s linear;
-  }
-  .share-button:hover{
+  }  */
+  /* .share-button:hover{
     transform: scale(1.1);
-  }
-  .share-button span{
+  } */
+  /* .share-button span{
     position: absolute;
     width: 105%;
     height: 105%;
@@ -393,10 +403,10 @@ footer nav{
     line-height: 80px;
     z-index: 999;
     transition: .6s linear;
-    border-radius: 40px;
+    border-radius: 40px; */
 
-  }
-  .share-button:hover span{
+
+  /* .share-button:hover span{
     transform: translateX(-100%);
     transition-delay: .3s;
   }
@@ -426,31 +436,36 @@ footer nav{
   }
   .share-button a:nth-of-type(4){
     transition-delay: .4s;
-  }
+  } */ */
 
+
+
+ 
 
 .callusbar {
     position: relative;
     float: left;
+    font-family: 'Roboto', sans-serif;
+    
     
 }
 
 .headofcallus{
     position: relative;
-    left: 10px;
-    top: 55px;
+    left: 135px;
+    bottom:225px ;
     color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-family: sans-serif;
-  
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 footer nav ul li{
     list-style-type: none;
     font-size: 17px;
     color: white;
     /* display: inline; */
-    margin:10px;
-    font-family: sans-serif;
+    /* margin:15px; */
+    font-family: 'Roboto', sans-serif;
 }
 .footernav{
     color: rgb(165, 163, 163);
@@ -461,12 +476,77 @@ footer nav ul li{
 footer nav ul{
     text-align: left;
     position: relative;
-    left: 2px;
-    top:60px;
-    
+    left: 160px;
+    bottom:210px;
+   
+
+}
+.callusbarinfo{
+
+    position: relative;
+    margin: 15px;
+    font-family:'Roboto', sans-serif;
+
 }
 
+footer nav ul li img{
+    text-align: left;
+    position: relative;
+    margin: 10px;
+    right: 145px;
+    bottom:50px;
+    width: 20px;
+    height: 20px;
 
+}
+.icon1{
+    position: relative;
+    bottom:80px;
+    width: 25px;
+    height: 25px;
+}
+
+.icon2{
+    position: relative;
+    bottom:90px;
+    width: 22px;
+    height: 22px;
+}
+
+.icon3{
+    position: relative;
+    bottom:205px;
+    right: 142px;
+    width: 22px;
+    height: 22px;
+}
+
+.informationbar {
+    position: relative;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    left: 100px;
+}
+.headofinformationbar{
+    position: relative;
+    font-size: 15px;
+    font-weight: bold;
+    bottom:354px;
+    left:374px;
+    color: white;
+}
+
+.footerinfo {
+    
+    position: relative;
+    text-align: left;
+    left:210px;
+    bottom:140px;
+    font-size:15px;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px;
+}
 
 .slideshowimgs {
     position: relative;

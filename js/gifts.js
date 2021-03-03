@@ -122,7 +122,7 @@ function image() {
       donation[0] = parseInt(donation[0]) + parseInt(input1.value);
       saveToLoc();
     }
-    img.src = '/img/cancer.jpg';
+    img.src = 'img/cancer.jpg';
     result1.appendChild(img);
 
   } else if (category.value === 'refugees') {
@@ -130,7 +130,7 @@ function image() {
       donation[1] = parseInt(donation[1]) + parseInt(input1.value);
       saveToLoc();
     }
-    img.src = '/img/refugee.jpg';
+    img.src = 'img/refugee.jpg';
     result1.appendChild(img);
 
   } else if (category.value === 'orphans') {
@@ -138,7 +138,7 @@ function image() {
       donation[2] = parseInt(donation[2]) + parseInt(input1.value);
       saveToLoc();
     }
-    img.src = '/img/orphan.jpg';
+    img.src = 'img/orphan.jpg';
     result1.appendChild(img);
 
   }
@@ -147,7 +147,7 @@ function image() {
       donation[3] = parseInt(donation[3]) + parseInt(input1.value);
       saveToLoc();
     }
-    img.src = 'http://almasalah.com/MediaStorage/GalleryImages/129782.jpg?width=750&&height=375';
+    img.src ='img/sad-children.jpg';
     result1.appendChild(img);
   }
   chart();

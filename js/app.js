@@ -6,7 +6,6 @@ let arryOfCatigory = ['Alhusain Center', 'Refugees', 'Orphans', 'Poor'];
 
 
 function chart() {
-  
 
   let chartJs = document.getElementById('score').getContext('2d');
 
@@ -15,8 +14,6 @@ function chart() {
   if (chartArr) {
     var buyerData = new Chart(chartJs, {
       type: 'horizontalBar',
-
-
       data: {
         labels: arryOfCatigory,
         datasets: [

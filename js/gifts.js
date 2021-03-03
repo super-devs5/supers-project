@@ -8,20 +8,15 @@ let category = document.getElementById('category');
 
 let input1 = document.createElement('input');
 
-let brEl =document.createElement('br');
-let brE2 =document.createElement('br');
-let brE3 =document.createElement('br');
-  
+let brEl = document.createElement('br');
+let brE2 = document.createElement('br');
+let brE3 = document.createElement('br');
 
 let selectType = document.getElementById('type');
 
 function payment() {
-  
-
-
   let lable1 = document.createElement('label');
   selectfin.appendChild(lable1);
-  
   lable1.textContent = 'Amount : ';
 
   lable1.appendChild(input1);
@@ -29,8 +24,6 @@ function payment() {
   input1.name = 'money';
 
   selectfin.appendChild(brE2);
-
-
 
   let lable2 = document.createElement('label');
   selectfin.appendChild(lable2);
@@ -104,8 +97,6 @@ function action(event) {
     payment();
 
   }
-
-
 }
 
 let paragraph = document.getElementById('paragraph');
@@ -114,87 +105,72 @@ submit.addEventListener('click', result);
 
 function result(event) {
   event.preventDefault();
+  console.log(selectType.value);
   paragraph.textContent = `Thank you ${giftForm.name.value} for supporting ${giftForm.category.value} by giving ${input1.value} we will contact you very soon`;
-  // submit.removeEventListener('click', result);
   image();
 }
 
-
 let result1 = document.getElementById('result1');
-// submit.addEventListener('click', image);
 
-
-let donation= [0,0,0,0];
-
-let count=1;
+let donation = [0, 0, 0, 0];
 
 function image() {
-  // submit.removeEventListener('click', image);
-
-  // event.preventDefault();
-
   let img = document.getElementById('defimg');
 
   if (category.value === 'Alhusain Center for Cancer') {
-    donation[0]=parseInt(donation[0])+parseInt(input1.value);
-    if (type.value === 'financial'){
+    if (type.value === 'financial') {
+      donation[0] = parseInt(donation[0]) + parseInt(input1.value);
       saveToLoc();
     }
     img.src = '/img/cancer.jpg';
     result1.appendChild(img);
 
-  } else if (category.value ==='refugees') {
-    donation[1]=parseInt(donation[1])+parseInt(input1.value);
-    if (type.value === 'financial')
-    {saveToLoc();}
+  } else if (category.value === 'refugees') {
+    if (type.value === 'financial') {
+      donation[1] = parseInt(donation[1]) + parseInt(input1.value);
+      saveToLoc();
+    }
     img.src = '/img/refugee.jpg';
     result1.appendChild(img);
 
-  } else if (category.value ==='orphans') {
-    donation[2]=parseInt(donation[2])+parseInt(input1.value);
-    if (type.value === 'financial')
-    {saveToLoc();}
+  } else if (category.value === 'orphans') {
+    if (type.value === 'financial') {
+      donation[2] = parseInt(donation[2]) + parseInt(input1.value);
+      saveToLoc();
+    }
     img.src = '/img/orphan.jpg';
     result1.appendChild(img);
 
   }
-  else if (category.value ==='poor') {
-    donation[3]=parseInt(donation[3])+parseInt(input1.value);
-    if (type.value === 'financial')
-    {saveToLoc();}
+  else if (category.value === 'poor') {
+    if (type.value === 'financial') {
+      donation[3] = parseInt(donation[3]) + parseInt(input1.value);
+      saveToLoc();
+    }
     img.src = 'http://almasalah.com/MediaStorage/GalleryImages/129782.jpg?width=750&&height=375';
     result1.appendChild(img);
   }
-  let noor = document.getElementById('score');
-  // noor.innerHTML="";
-  count=0;
   chart();
-
 }
 
 
-
-let locTotal=[0,0,0,0];
-function saveToLoc(){
+let locTotal = [0, 0, 0, 0];
+function saveToLoc() {
 
   if (locTotal) {
     for (let i = 0; i < donation.length; i++) {
-      donation[i]=parseInt(donation[i])+parseInt(locTotal[i]);
+      donation[i] = parseInt(donation[i]) + parseInt(locTotal[i]);
     }
-
   }
-  let locS= JSON.stringify(donation);
+  let locS = JSON.stringify(donation);
   localStorage.setItem('Sumation', locS);
 
 }
-
-function getRes(){
-  let prevVal= localStorage.getItem('Sumation');
-  locTotal=JSON.parse(prevVal);
+function getRes() {
+  if (locTotal) {
+    let prevVal = localStorage.getItem('Sumation');
+    locTotal = JSON.parse(prevVal);
+  }
 }
-
-// if (count) {
-//   chart();
-// }
 getRes();
 

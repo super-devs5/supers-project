@@ -501,7 +501,7 @@ footer nav ul li img {
   bottom: 0 px;
   animation: slide 25s infinite linear;
 }
-@keyframes slide {
+/* @keyframes slide {
   15% {
     background: url(https://www.qcharity.org/Exportpath/WebStoryMasterBanner/2020/3/0-Photo2020-03-24_02-08-36-PM.jpg);
     visibility: visible;
@@ -527,4 +527,4 @@ footer nav ul li img {
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
-}
+} */

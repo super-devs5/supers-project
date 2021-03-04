@@ -120,7 +120,6 @@
 body{
     overflow-x: hidden;
     overflow-y: hidden;
-    /* height: fit-content; */
 }
 header{
     background-color: #36ACA0;
@@ -339,8 +338,6 @@ footer nav ul li{
     list-style-type: none;
     font-size: 17px;
     color: white;
-    /* display: inline; */
-    /* margin:15px; */
     font-family: 'Roboto', sans-serif;
 }
 .footernav{

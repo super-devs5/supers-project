@@ -31,8 +31,6 @@ function chart() {
 
         ]
       }
-
-      // options: { scales: { yAxes: [{ ticks: { beginAtZero: true } }] } }
     });
   }
 }

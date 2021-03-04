@@ -1,0 +1,533 @@
+* {
+  box-sizing: content-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #dde3f6;
+  overflow-x: hidden;
+  position: relative;
+}
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+}
+
+main {
+  overflow: hidden;
+}
+header {
+  background-color: #36aca0;
+
+  height: 65px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6),
+    0 6px 20px 0 rgba(122, 0, 0, 0.3);
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 500;
+  animation: example infinite linear;
+  animation-duration: 15s;
+}
+
+@keyframes example {
+  0% {
+    background-color: #36aca0;
+  }
+  100% {
+    background-color: #1e8694;
+  }
+  50% {
+    background-color: #206e9f;
+  }
+  25% {
+    background-color: #004c84;
+  }
+}
+
+.charityname {
+  position: relative;
+  left: 85px;
+  bottom: 53px;
+  color: rgb(255, 255, 255);
+  font-family: "Playball", cursive;
+  font-size: 27px;
+}
+
+ul li a {
+  position: relative;
+}
+ul li a::before {
+  content: "";
+  width: 0px;
+  height: 2px;
+  background: #037df0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: 0.5s;
+}
+
+header nav img {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  top: 0%;
+  left: 15px;
+  border: rgb(255, 255, 255);
+  border-style: solid;
+
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+header nav ul li {
+  display: inline;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 15px;
+}
+header nav ul {
+  text-align: right;
+  position: relative;
+  right: 30px;
+  bottom: 70px;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+
+  width: 110px;
+  height: 40px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(250, 250, 250);
+  border-radius: 5px;
+
+  cursor: pointer;
+  box-shadow: 0px 0px 0px rgba(255, 95, 183, 0.2);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  box-shadow: 0px 0px 20px rgba(255, 161, 213, 0.4);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+nav a:hover {
+  color: #36aca0;
+  background-color: #f5bda7;
+}
+
+.showNo {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  margin-top: 0px;
+  background-color: rgb(255, 249, 249);
+
+  box-shadow: 4px 4px 4px 4px rgba(10, 10, 10, 0.4);
+}
+.Our-initiatives {
+  position: relative;
+  margin-top: 150px;
+  width: 60%;
+  left: 280px;
+  text-align: center;
+}
+#headofOur-initiatives {
+  position: relative;
+  font-size: 25px;
+  font-weight: bold;
+
+  text-align: center;
+  color: #a10144;
+  top: 50px;
+}
+#paraofOur-initiatives {
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  top: 60px;
+  text-align: center;
+  color: #021658;
+}
+.toKnow {
+  position: relative;
+  width: 100%px;
+  height: 350px;
+  text-align: left;
+  padding: 30px;
+  line-height: 1.4;
+  color: rgb(57, 57, 58);
+  /* left: 70px; */
+  top: 20px;
+  background-color: #2fb6a8;
+  box-shadow: 2px 5px 5px 2px rgba(10, 10, 10, 0.4);
+  margin-top: 100px;
+}
+
+.cont1 {
+  position: relative;
+  width: 500px;
+  height: 270px;
+  left: 0px;
+  font-family: sans-serif;
+  /* background-color:#004c84 ; */
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+#headofvesion {
+  position: relative;
+  font-size: 35px;
+  font-weight: bold;
+  left: 25px;
+  color: #3e4546;
+}
+
+#vesion {
+  position: relative;
+  font-size: 20px;
+
+  left: 25px;
+  color: white;
+}
+
+#headofmassage {
+  position: relative;
+  font-size: 35px;
+  font-weight: bold;
+  left: 30px;
+  top: 30px;
+  color: #3e4546;
+}
+
+#ourmassage {
+  position: relative;
+  font-size: 20px;
+  top: 30px;
+  left: 25px;
+  color: white;
+}
+.cont2 {
+  width: 578px;
+  height: 578px;
+  right: 0px;
+  /* float: right; */
+}
+
+.ourvesion {
+  width: 680px;
+  height: 410px;
+  position: relative;
+  left: 640px;
+  bottom: 324px;
+  padding: 0px;
+}
+
+.one,
+.tow {
+  float: left;
+  margin: 50px;
+
+  margin-top: 150px;
+  padding: 19px;
+  height: 300px;
+  background-color: #36aca0;
+  position: relative;
+  left: 40px;
+  bottom: 0px;
+  color: rgb(248, 248, 248);
+  line-height: 1;
+  font-size: 17px;
+  text-align: center;
+  font-family: sans-serif;
+  border-radius: 10px;
+}
+
+.buttonone {
+  position: relative;
+  width: 75%;
+  height: 50px;
+  top: 20px;
+  color: rgb(250, 250, 250);
+  border-radius: 20px;
+  font-size: 21px;
+  letter-spacing: 2px;
+  background-color: #7b7e7e;
+}
+.buttonone:hover,
+.buttonone:focus,
+.buttonone:active {
+  box-shadow: 0px 0px 20px rgba(255, 161, 213, 0.4);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.buttonone:hover {
+  color: #ffffff;
+  background-color: #f3bfaa;
+}
+
+footer div {
+  bottom: 20px;
+  font-family: "Roboto", sans-serif;
+}
+footer img {
+  width: 40px;
+  height: 40px;
+  padding-left: 20px;
+}
+footer nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  padding-left: 150px;
+  line-height: 1.6;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-color: #1d262d;
+  margin-bottom: 0;
+}
+body::after {
+  content: "";
+  display: block;
+  height: 200px;
+}
+
+footer nav {
+  position: relative;
+  top: 130px;
+}
+
+.copyright {
+  text-align: center;
+  position: relative;
+  bottom: 140px;
+  color: rgb(112, 112, 112);
+  font-size: 13px;
+  margin: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.parts {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  top: 45px;
+}
+#ourpartners {
+  position: relative;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  letter-spacing: 0px;
+  left: 345px;
+  margin-bottom: 5px;
+}
+
+.partnersimg {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  top: 5px;
+  left: 440px;
+  background-color: white;
+  border: solid white;
+  border-radius: 50%;
+  padding: 0px;
+  margin: 5px;
+}
+
+.flowing {
+  position: absolute;
+  bottom: 80px;
+  left: 530px;
+  font-size: 17px;
+}
+
+.headoffolowing {
+  position: relative;
+  left: 75px;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  bottom: 15px;
+  color: white;
+}
+
+.mahmoud {
+  position: relative;
+  left: 200px;
+  top: 40px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.mahmoud .head1 {
+  position: relative;
+  left: 2px;
+  font-weight: bold;
+}
+
+.mahmoud ul li {
+  position: relative;
+  margin: 5px;
+  font-size: 15px;
+  color: rgb(192, 205, 223);
+}
+
+.callusbar {
+  position: relative;
+  float: left;
+  font-family: "Roboto", sans-serif;
+}
+
+.headofcallus {
+  position: relative;
+  left: 135px;
+  bottom: 225px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+footer nav ul li {
+  list-style-type: none;
+  font-size: 17px;
+  color: white;
+
+  font-family: "Roboto", sans-serif;
+}
+.footernav {
+  color: rgb(165, 163, 163);
+  text-decoration: none;
+  font-size: 15px;
+  padding: 15px;
+}
+footer nav ul {
+  text-align: left;
+  position: relative;
+  left: 160px;
+  bottom: 210px;
+}
+.callusbarinfo {
+  position: relative;
+  margin: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+footer nav ul li img {
+  text-align: left;
+  position: relative;
+  margin: 10px;
+  right: 145px;
+  bottom: 50px;
+  width: 20px;
+  height: 20px;
+}
+.icon1 {
+  position: relative;
+  bottom: 80px;
+  width: 25px;
+  height: 25px;
+}
+
+.icon2 {
+  position: relative;
+  bottom: 90px;
+  width: 22px;
+  height: 22px;
+}
+
+.icon3 {
+  position: relative;
+  bottom: 205px;
+  right: 142px;
+  width: 22px;
+  height: 22px;
+}
+
+.informationbar {
+  position: relative;
+  float: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  left: 100px;
+}
+.headofinformationbar {
+  position: relative;
+  font-size: 15px;
+  font-weight: bold;
+  bottom: 354px;
+  left: 374px;
+  color: white;
+}
+
+.footerinfo {
+  position: relative;
+  text-align: left;
+  left: 210px;
+  bottom: 140px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  margin: 5px;
+}
+
+.slideshowimgs {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  margin-top: 50px;
+  background: url(https://www.qcharity.org/Exportpath/WebStoryMasterBanner/2020/3/0-Photo2020-03-24_02-08-36-PM.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.6),
+    0 6px 20px 0 rgba(122, 0, 0, 0.3);
+
+  left: 0px;
+  top: 1px;
+  bottom: 0 px;
+  animation: slide 25s infinite linear;
+}
+@keyframes slide {
+  15% {
+    background: url(https://www.qcharity.org/Exportpath/WebStoryMasterBanner/2020/3/0-Photo2020-03-24_02-08-36-PM.jpg);
+    visibility: visible;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  40% {
+    background: url(img/cancer.png);
+    visibility: visible;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  70% {
+    background: url(img/refugees.png);
+    visibility: visible;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  100% {
+    background: url(img/syrian-girl-school-child-education.jpg);
+    visibility: visible;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}

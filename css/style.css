@@ -492,14 +492,11 @@ footer nav ul li img {
   background: url(https://www.qcharity.org/Exportpath/WebStoryMasterBanner/2020/3/0-Photo2020-03-24_02-08-36-PM.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.6),
     0 6px 20px 0 rgba(122, 0, 0, 0.3);
-
   left: 0px;
   top: 1px;
   bottom: 0 px;
-  animation: slide 25s infinite linear;
 }
 /* @keyframes slide {
   15% {
